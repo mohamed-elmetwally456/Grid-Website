@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>TASKGrid</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .mainwrapper {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+          "asideone nav"
+          "asideone  main"
+          "asideone  main"
+          "asideone  main";
+        grid-template-rows: 1fr 4fr 4fr 4fr;
+        grid-template-columns: 1fr 5fr;
+      }
+      #mainnav {
+        grid-area: nav;
+        background-color: tan;
+        height: 57px;
+      }
+
+      #main {
+        grid-area: main;
+      }
+
+      #asideone {
+        grid-area: asideone;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: bold;
+        font-style: arial;
+        gap: 60px;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      img {
+        width: 25%;
+        height: 31.75vh;
+      }
+      .sec1 {
+        display: flex;
+        gap: 0;
+      }
+      #img1 {
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 200px;
+        height: 80px;
+      }
+      p {
+        color: grey;
+        font-style: arial;
+        margin-top: 10px;
+        margin-left: 50px;
+      }
+      #bold {
+        font: 1.1rem bold;
+        color: rgb(40, 40, 40);
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .social-icons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+        margin-left: 20px;
+      }
+      #weight {
+        margin-left: 20px;
+        margin-bottom: 30%;
+      }
+      #div10 {
+        display: block;
+      }
+      #weight h2 {
+        font-style: italic;
+        font-size: 1.5rem;
+        margin-left: 20px;
+      }
+      #weight p {
+        font-style: italic;
+        font-size: 0.9rem;
+        margin-left: 20px;
+      }
+      #lastdiv {
+        margin-bottom: 40%;
+        margin-left: 20px;
+      }
+      .img2 {
+        width: 25%;
+        height: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainwrapper">
+      <div id="mainnav">
+        <ul>
+          <li>All</li>
+          <li>Illustration</li>
+          <li>Motion</li>
+          <li>Print</li>
+        </ul>
+      </div>
+      <div id="main">
+        <section class="sec1">
+          <img src="5.jpg" alt="photo" />
+          <img src="p6.jpg" alt="photo" />
+          <img src="2.jpg" alt="photo" />
+          <img src="pexels-christina-morillo-1181210.jpg" alt="photo" />
+        </section>
+        <section class="sec1">
+          <img src="5.jpg" alt="photo" />
+          <img src="2.jpg" alt="photo" />
+          <img src="pexels-christina-morillo-1181210.jpg" alt="photo" />
+          <img src="3.jpg" alt="photo" />
+        </section>
+        <section class="sec1">
+          <img src="5.jpg" alt="photo" />
+          <img src="pexels-christina-morillo-1181210.jpg" alt="photo" />
+          <img src="3.jpg" alt="photo" />
+          <img src="2.jpg" alt="photo" />
+        </section>
+      </div>
+      <div id="asideone">
+        <img id="img1" src="Screenshot 2024-01-21 021941.png" alt="photo" />
+        <p id="bold">Portfolio</p>
+        <br />
+        <p>About US</p>
+        <br />
+        <p>Blog</p>
+        <br />
+        <p>Buy This Theme</p>
+        <br />
+      </div>
+      <div id="div10">
+        <div class="social-icons">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div id="weight">
+          <h2>A Text Wedght</h2>
+          <p>
+            hgaallfasfqiurncncsaocsancoascionas <br />
+            rwqrwqrwqrwqrwqrwqytcianvuiniwnev<br />
+            agadyawevpovkspvcmwoqfq<br />
+          </p>
+        </div>
+        <div id="lastdiv">
+          <h2>Flicker</h2>
+          <img
+            class="img2"
+            src="pexels-christina-morillo-1181210.jpg"
+            alt="photo"
+          />
+          <img
+            class="img2"
+            src="pexels-christina-morillo-1181210.jpg"
+            alt="photo"
+          />
+          <img
+            class="img2"
+            src="pexels-christina-morillo-1181210.jpg"
+            alt="photo"
+          />
+          <img
+            class="img2"
+            src="pexels-christina-morillo-1181210.jpg"
+            alt="photo"
+          />
+          <img
+            class="img2"
+            src="pexels-christina-morillo-1181210.jpg"
+            alt="photo"
+          />
+          <img
+            class="img2"
+            src="pexels-christina-morillo-1181210.jpg"
+            alt="photo"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
